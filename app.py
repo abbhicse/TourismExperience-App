@@ -35,7 +35,7 @@ def load_models():
     encoders = joblib.load("models/regressor_label_encoders.pkl")  # Country, Region, Continent
 
     # UPDATED: load the smaller sparse collaborative model (joblib)
-    collab_model = joblib.load("models/collaborative_model.joblib")
+    collab_model = joblib.load("models/collaborative_model.pkl")
 
     # Content model unchanged
     content_model = joblib.load("models/content_based_model.pkl")
